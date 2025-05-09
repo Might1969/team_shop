@@ -105,6 +105,6 @@ if(isset($_POST['cancel'])){
 <script src="js/script.js"></script>
 
 <?php include 'components/alert.php'; ?>
-
+<?php include 'components/footer.php'; ?>
 </body>
 </html>
