@@ -1,10 +1,4 @@
 <?php
-  // First we start a session which allow for us to store information as SESSION variables.
-  session_start();
-  // "require" creates an error message and stops the script. "include" creates an error and continues the script.
-  require "includes/dbh.inc.php";
-?>
-<?php
 
 include_once 'components/connect.php';
 
@@ -43,8 +37,7 @@ if(isset($_COOKIE['user_id'])){
              <?php
                 $count_cart_items = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
                 $count_cart_items->execute([$user_id]);
-                $result = $count_cart_items->fetchAll();
-                $total_cart_items = count($result);
+                $total_cart_items = $count_cart_items->rowCount();
              ?>
              <a href="shopping_cart.php" class="cart-btn">cart<span><?= $total_cart_items; ?></span></a>
              <?php 

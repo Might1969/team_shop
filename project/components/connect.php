@@ -19,7 +19,7 @@
   class Dbh{
       protected function connect(){
           try{
-              $db_name = 'mysql:host=localhost;dbname=indi_shop_db';
+              $db_name = 'mysql:host=localhost;dbname=team_shop';
               $db_user_name = 'root';
               $db_user_pass = '';
               $dbh = new PDO($db_name, $db_user_name, $db_user_pass);
