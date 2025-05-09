@@ -12,7 +12,7 @@ if (isset($_POST['reset-request-submit'])) {
     $token = random_bytes(32);
     $validator = bin2hex($token);
     $expires = date("U") + 1800; // 30分钟有效期
-    $url = "http://".$_SERVER['HTTP_HOST']."/team_shop/project/create-new-password.php?selector=".$selector."&validator=".$validator;
+    $url = "http://".$_SERVER['HTTP_HOST']."../project/create-new-password.php?selector=".$selector."&validator=".$validator;
 
     // 数据库操作
     require 'dbh.inc.php';
