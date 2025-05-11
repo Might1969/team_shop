@@ -13,7 +13,16 @@
                 $count_cart_items->execute([$user_id]);
                 $total_cart_items = $count_cart_items->rowCount();
              ?>
-             <a href="shopping_cart.php" class="cart-btn">cart<span><?= $total_cart_items; ?></span></a>
+
+             <?php 
+                 if(isset($_SESSION['id'])){
+             ?>
+               <a href="shopping_cart.php" class="cart-btn">cart<span><?= $total_cart_items; ?></span></a>
+             <?php
+                 }else{
+             ?>
+             <?php }?>
+
              <?php 
                  if(isset($_SESSION['id'])){
              ?>

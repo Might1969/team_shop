@@ -2,10 +2,10 @@
    session_start(); 
 include 'components/connect.php';
 
-if(isset($_COOKIE['user_id'])){
-   $user_id = $_COOKIE['user_id'];
+if(isset($_SESSION['id'])){
+   $user_id = $_SESSION['id'];
 }else{
-   setcookie('user_id', create_unique_id(), time() + 60*60*24*30);
+
 }
 
 if(isset($_GET['get_id'])){
