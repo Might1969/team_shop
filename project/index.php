@@ -1,15 +1,4 @@
-<?php
-
-session_start();
-include_once 'components/connect.php';
-
-if(isset($_SESSION['id'])){
-   $user_id = $_SESSION['id'];
-}else{
-
-}
-
-?>
+<?php include 'components/link_component.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">

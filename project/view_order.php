@@ -1,12 +1,6 @@
+<?php include 'components/link_component.php'; ?>
+
 <?php
-   session_start(); 
-include 'components/connect.php';
-
-if(isset($_SESSION['id'])){
-   $user_id = $_SESSION['id'];
-}else{
-
-}
 
 if(isset($_GET['get_id'])){
    $get_id = $_GET['get_id'];

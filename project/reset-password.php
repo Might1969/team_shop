@@ -1,7 +1,4 @@
-<?php
-   session_start(); 
-  require 'components/header.php';
-?>
+<?php include 'components/link_component.php'; ?>
 
 <main>
   <div class="wrapper-main">
