@@ -47,11 +47,11 @@
 
 
          <div class="footer__copyright">
-               &copy; Pair 08. All Rights Reserved.
+               &copy; Team 06. All Rights Reserved.
             </div>
          </div>
          <div class="attribution">
-CISC3003 Web Programming - 2024: Pair 08 DC228265 Guan Zihan | DC228428 Zhang Jiaqi
+CISC3003 Web Programming - 2025: Team 06 DC228265 Guan Zihan | DC228428 Zhang Jiaqi | DC228313 Ou Lingyi | DC229292 Chen Xingchen
          </div>
     </footer>
 </body>
