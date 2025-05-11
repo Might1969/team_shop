@@ -58,18 +58,6 @@ if (isset($_POST['signup-submit'])) {
                 mysqli_stmt_execute($stmt);
                 $userId = mysqli_insert_id($conn); // 获取新用户ID
 
-                // 插入空profile
-                $sqlProfile = "INSERT INTO profiles (profiles_about, profiles_introtitle, profiles_introtext, users_id) 
-                              VALUES (?, ?, ?, ?)";
-                $stmtProfile = mysqli_stmt_init($conn);
-                if (!mysqli_stmt_prepare($stmtProfile, $sqlProfile)) {
-                    throw new Exception("SQL error");
-                }
-
-                $empty = '';
-                mysqli_stmt_bind_param($stmtProfile, "sssi", $empty, $empty, $empty, $userId);
-                mysqli_stmt_execute($stmtProfile);
-
                 // 提交事务
                 mysqli_commit($conn);
 

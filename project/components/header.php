@@ -1,5 +1,4 @@
 
-
 <header class="header">
 	<?php include_once 'components/connect.php'; ?>
    <section class="flex">
@@ -18,7 +17,6 @@
              <?php 
                  if(isset($_SESSION['id'])){
              ?>
-             	<a href="profile.php"><?php echo $_SESSION["uid"]; ?></a>
              	<a href="includes/logout.inc.php">LOGOUT</a>
              <?php
                  }else{

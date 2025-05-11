@@ -1,5 +1,5 @@
 <?php
-
+   session_start(); 
 include 'components/connect.php';
 
 if(isset($_COOKIE['user_id'])){

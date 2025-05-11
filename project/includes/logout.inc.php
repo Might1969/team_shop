@@ -2,4 +2,6 @@
 session_start();
 session_unset();
 session_destroy();
+unset($_COOKIE['user_id']);
+$user_id = 0;
 header("Location: ../index.php");
