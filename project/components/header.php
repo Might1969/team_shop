@@ -23,16 +23,12 @@
                if(isset($_SESSION['id'])){
                      $is_worker = $conn->prepare("SELECT * FROM `worker` WHERE id = ?");
                      $is_worker->execute([$user_id]);
-                     $is_worker = $count_cart_items->rowCount();
+                     $is_worker = $is_worker->rowCount();
                      if($is_worker>0){
                         echo'<a href="add_product.php">add product</a>';
                      }
                      else{
-                        $count_cart_items = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
-                        $count_cart_items->execute([$user_id]);
-                        $total_cart_items = $count_cart_items->rowCount();
-
-                        
+          
                      }
                   }
                ?>
