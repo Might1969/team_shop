@@ -168,7 +168,7 @@ if(isset($_POST['place_order'])){
 </section>
 
 
-<footer><h1>DC228428 Zhang JiaQi</h1></footer>
+
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
