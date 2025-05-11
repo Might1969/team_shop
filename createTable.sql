@@ -56,6 +56,18 @@ CREATE TABLE `users` (
   `pwdUsers` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+CREATE TABLE `profiles` (
+  `profiles_id` int(11) NOT NULL,
+  `profiles_about` text NOT NULL,
+  `profiles_introtitle` text NOT NULL,
+  `profiles_introtext` text NOT NULL,
+  `users_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+ALTER TABLE `profiles`
+  ADD PRIMARY KEY (`profiles_id`),
+  ADD KEY `users_id` (`users_id`);
+
 ALTER TABLE `pwdreset`
   ADD PRIMARY KEY (`pwdResetId`);
 

@@ -55,8 +55,9 @@ if(isset($_POST['empty_cart'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart - Amazon Style</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        body { background: #eaeded; font-family: 'Amazon Ember', Arial, sans-serif; margin: 0; }
+         body { background: #eaeded; font-family: 'Amazon Ember', Arial, sans-serif; margin: 0; }
         
         .products { max-width: 1200px; margin: 20px auto; padding: 0 15px; }
         
