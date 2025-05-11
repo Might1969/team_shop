@@ -66,6 +66,13 @@ section{
    text-transform: capitalize;
 }
 
+.logo img {
+    width: 5vw;          /* 视口宽度的5% [8](@ref) */
+    height: auto;        /* 保持原始宽高比 [6,7](@ref) */
+    display: block;      /* 消除默认inline间隙 [8](@ref) */
+    object-fit: contain; /* 智能适应容器 [7](@ref) */
+}
+
 .empty{
    width: 100%;
    background-color: var(--white);
